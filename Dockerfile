@@ -29,4 +29,4 @@ ENV HUBOT_ADAPTER slack
 ENV HUBOT_DESCRIPTION Just a friendly robot
 
 # Override adapter with -env-file ./ENV
-CMD /usr/local/bin/yo hubot --adapter $HUBOT_ADAPTER --owner $HUBOT_OWNER --name $HUBOT_NAME --description $HUBOT_DESCRIPTION --defaults && bin/hubot --adapter $HUBOT_ADAPTER
+CMD /usr/local/bin/yo hubot --adapter "$HUBOT_ADAPTER" --owner "$HUBOT_OWNER" --name "$HUBOT_NAME" --description "$HUBOT_DESCRIPTION" --defaults && bin/hubot --adapter "$HUBOT_ADAPTER"
